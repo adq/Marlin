@@ -1066,7 +1066,7 @@
  *    P1  Raise the nozzle always to Z-park height.
  *    P2  Raise the nozzle by Z-park amount, limited to Z_MAX_POS.
  */
-//#define NOZZLE_PARK_FEATURE
+#define NOZZLE_PARK_FEATURE
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z }
@@ -1588,7 +1588,7 @@
  * Adds the M150 command to set the LED (or LED strip) color.
  * If pins are PWM capable (e.g., 4, 5, 6, 11) then a range of
  * luminance values can be set from 0 to 255.
- * For Neopixel LED overall brightness parameters is also available 
+ * For Neopixel LED overall brightness parameters is also available
  *
  * *** CAUTION ***
  *  LED Strips require a MOFSET Chip between PWM lines and LEDs,

@@ -118,7 +118,7 @@
  * Also, if the temperature is set to a value below mintemp, it will not be changed by autotemp.
  * On an Ultimaker, some initial testing worked with M109 S215 B260 F1 in the start.gcode
  */
-#define AUTOTEMP
+//#define AUTOTEMP
 #if ENABLED(AUTOTEMP)
   #define AUTOTEMP_OLDWEIGHT 0.98
 #endif
@@ -793,7 +793,7 @@
  * Note that M207 / M208 / M209 settings are saved to EEPROM.
  *
  */
-//#define FWRETRACT  // ONLY PARTIALLY TESTED
+#define FWRETRACT  // ONLY PARTIALLY TESTED
 #if ENABLED(FWRETRACT)
   #define MIN_AUTORETRACT 0.1             // When auto-retract is on, convert E moves of this length and over
   #define MAX_AUTORETRACT 10.0            // Upper limit for auto-retract conversion
@@ -816,7 +816,7 @@
  * Requires an LCD display.
  * This feature is required for the default FILAMENT_RUNOUT_SCRIPT.
  */
-//#define ADVANCED_PAUSE_FEATURE
+#define ADVANCED_PAUSE_FEATURE
 #if ENABLED(ADVANCED_PAUSE_FEATURE)
   #define PAUSE_PARK_X_POS 3                  // X position of hotend
   #define PAUSE_PARK_Y_POS 3                  // Y position of hotend
